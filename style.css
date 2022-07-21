@@ -1,0 +1,147 @@
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'League Spartan', sans-serif; }
+
+:root{
+   /* ### Primary */
+
+--veryDarkMagenta: hsl(300, 43%, 22%);
+--softPink: hsl(333, 80%, 67%);
+
+    /* ### Neutral*/
+
+--darkGrayishMagenta: hsl(303, 10%, 53%);
+--lightGrayishMagenta: hsl(300, 24%, 96%);
+--White: hsl(0, 0%, 100%);
+
+--weights-400: 400; 
+--weights-500: 500;
+--weights-700: 700;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;    
+    font-size: 17px
+}
+
+main {
+    width: clamp(350px,95%,1040px);
+    text-align: center; 
+    background: url(images/bg-pattern-top-mobile.svg)no-repeat, url(./images/bg-pattern-bottom-mobile.svg) no-repeat;
+    background-position: left top,bottom right ;        
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 950px ));
+}
+
+/*descripcion de la paginas*/
+.header {
+    padding-top: 50px;
+}
+.descrip{
+    text-align: center;    
+    margin-bottom: 20px;
+    padding: 1rem;
+}
+
+.descrip h1 {
+    color: var(--veryDarkMagenta);
+    font-size: 2.5rem;
+    font-weight: var(--weights-700);    
+    margin: 1.3rem;
+}
+
+.descrip p{
+    color: var(--darkGrayishMagenta);
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: var(--weights-500);
+}
+
+/*punntuacion de estrellas*/
+.cont_puntuacion{    
+    font-size: 1.2rem;
+    font-weight: var(--weights-700);
+    color: var(--veryDarkMagenta);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.puntuacion {
+    width: 100%;
+    height: 85px;
+
+    margin: 0.5rem 1.2rem;
+    padding: 10px 15px;
+    border-radius: 15px;
+
+    background-color: var(--lightGrayishMagenta);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Comentarios*/
+.cont_comment {
+    padding: 1rem;
+    color: var(--White);
+}
+.comment {
+    width: 100%;
+    height: 250px;
+    
+    margin: 15px 0;
+    padding: 1.8rem;
+
+    background-color: var(--veryDarkMagenta);
+    border-radius: 15px;
+}
+
+.comment--header {
+    display: flex;
+    margin: 1rem;
+}
+.comment--img{
+    width: 3rem;
+    height: 3rem;
+
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 1.5rem;
+}
+
+.comment--img img {
+    width: 100%;
+}
+
+.comment--name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.comment--name h4{
+    color: var(--softPink);
+    font-size: 1.25rem;
+    font-weight: var(--weights-400);
+}
+
+.comment p {
+    text-align: start;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+/*final de pag*/
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }

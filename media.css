@@ -1,0 +1,70 @@
+
+.body{
+    
+    align-items: center;
+}
+
+main{
+    margin-top: 100px;
+    background: url(./images/bg-pattern-top-desktop.svg) no-repeat, url(./images/bg-pattern-bottom-desktop.svg) no-repeat ;
+    max-height: 720px;
+    
+}
+
+.header {    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.descrip {  
+    text-align: start;
+    padding: 0 5rem 0 0;   
+
+}
+
+.descrip h1{
+    margin-left: 0;
+}
+
+.cont_puntuacion{
+    height: 220px;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    
+    justify-content: start;
+}
+.puntuacion {
+    width: 80%;
+    height: 50px;
+    margin: 0.1rem 1.2rem;
+    padding: 10px 5px;
+    flex-wrap: nowrap;    
+}
+
+.uno{
+    align-self: flex-start;
+    margin-left: 0;
+}
+.tres{
+    justify-self: end;
+    margin-left: 20%;
+}
+
+.puntuacion--star {
+    margin: 1rem;
+}
+
+.cont_comment{
+    height: 353px;
+    display: flex;
+    padding: 0;
+    gap: 1.5rem;
+}
+
+.comment--dos {
+    align-self: center;
+}
+
+.comment--tres{
+    align-self: flex-end;
+}
